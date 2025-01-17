@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import styles from './FileExplorer.module.scss';
 import Folder from '../../components/Folder/Folder';
 import PathView from '../../components/PathView/PathView';

@@ -1,5 +1,5 @@
 import {useTheme} from '../../../core/ThemeProvider';
-import React, {useCallback, useEffect, useLayoutEffect, useRef, useState} from 'react';
+import {useCallback, useEffect, useLayoutEffect, useRef, useState} from 'react';
 import {TypewriterHandlers} from 'typing-animation-react/stories/Typewriter/Typewriter';
 import {addEnterCallback, removeEnterCallback} from '../../../utils/keyboardEvents';
 import Typewriter from 'typing-animation-react';

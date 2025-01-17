@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import Header from '../../components/Header/Header';
 import Typing from '../../components/Welcome/Typing/Typing';
 import EnvironmentSelection from '../../components/Welcome/EnvironmentSelection/EnvironmentSelection';

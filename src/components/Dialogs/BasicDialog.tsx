@@ -1,4 +1,3 @@
-import React from 'react';
 import {Dialog, DialogContent, DialogTitle} from '@mui/material';
 import {Close} from '@mui/icons-material';
 

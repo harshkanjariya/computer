@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import styles from './Contact.module.scss';
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';

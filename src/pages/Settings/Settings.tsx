@@ -1,4 +1,3 @@
-import React from 'react';
 import {Switch} from '@mui/material';
 import {getCurrentEnvironment, setEnvironment} from '../../utils/ui';
 import {environments} from '../../utils/constants';

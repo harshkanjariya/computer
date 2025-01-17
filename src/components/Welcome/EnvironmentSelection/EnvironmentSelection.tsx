@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './EnvironmentSelection.module.scss';
 import {environments} from '../../../utils/constants';
 import basePath from '../../../utils/basePath';

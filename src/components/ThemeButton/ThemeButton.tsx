@@ -1,4 +1,3 @@
-import React from 'react';
 import {DarkMode, LightMode} from '@mui/icons-material';
 import styles from './ThemeButton.module.css';
 import {themes} from '../../utils/constants';

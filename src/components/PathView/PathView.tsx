@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './PathView.module.scss';
 import {Path} from '../../utils/types';
 

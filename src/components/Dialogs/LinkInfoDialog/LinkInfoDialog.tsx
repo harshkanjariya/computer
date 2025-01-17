@@ -1,6 +1,5 @@
 import BasicDialog, {BasicDialogProps} from '../BasicDialog';
 import BaseFolder from '../../Folder/BaseFolder';
-import React from 'react';
 import styles from './LinkInfoDialog.module.scss';
 
 interface LinkInfoDialog extends BasicDialogProps {

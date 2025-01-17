@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './InfoDialog.module.scss';
 import data from '../../../assets/data/info.json';
 import BasicDialog, {BasicDialogProps} from '../BasicDialog';

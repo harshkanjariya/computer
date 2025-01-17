@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useLayoutEffect, useRef, useState} from 'react';
+import {useCallback, useEffect, useLayoutEffect, useRef, useState} from 'react';
 import styles from './Terminal.module.scss';
 import Typewriter from 'typing-animation-react';
 import {TypewriterHandlers} from 'typing-animation-react/stories/Typewriter/Typewriter';

@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './AppsDialog.module.scss';
 import BasicDialog, {BasicDialogProps} from '../BasicDialog';
 import BaseFolder from '../../Folder/BaseFolder';

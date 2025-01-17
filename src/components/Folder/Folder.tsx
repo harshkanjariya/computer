@@ -1,4 +1,3 @@
-import React from 'react';
 import BaseFolder from './BaseFolder';
 
 export interface FolderProps {
