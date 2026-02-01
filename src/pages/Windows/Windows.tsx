@@ -6,12 +6,16 @@ import ContextMenu, {ContextMenuHandlers} from '../../components/CotextMenu/Cont
 import React, {useRef, useState} from 'react';
 import InfoDialog from '../../components/Dialogs/InfoDialog/InfoDialog';
 import AppsDialog from '../../components/Dialogs/AppsDialog/AppsDialog';
+import TerminalWindow from '../../components/TerminalWindow/TerminalWindow';
+import FileExplorerWindow from '../../components/FileExplorerWindow/FileExplorerWindow';
 
 function Windows() {
   const navigate = useNavigate();
   const menu = useRef<ContextMenuHandlers>();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [isAppsOpen, setIsAppsOpen] = useState(false);
+  const [isTerminalOpen, setIsTerminalOpen] = useState(false);
+  const [isFileExplorerOpen, setIsFileExplorerOpen] = useState(false);
 
   function openMenu(event: React.MouseEvent<HTMLDivElement>) {
     event.preventDefault();
@@ -29,7 +33,7 @@ function Windows() {
       options={['open', 'properties']}
       onSelect={(index) => {
         if (index == 0) {
-          navigate(routes.files);
+          setIsFileExplorerOpen(true);
         } else if (index == 1) {
           setIsDialogOpen(true);
         }
@@ -43,12 +47,20 @@ function Windows() {
       isOpen={isAppsOpen}
       onClose={() => setIsAppsOpen(false)}
     />
+    <TerminalWindow
+      isOpen={isTerminalOpen}
+      onClose={() => setIsTerminalOpen(false)}
+    />
+    <FileExplorerWindow
+      isOpen={isFileExplorerOpen}
+      onClose={() => setIsFileExplorerOpen(false)}
+    />
     <div className={styles.folderList}>
       <BaseFolder
         onContextMenu={openMenu}
         name={'My Life'}
         image={'/icons/this-pc.png'}
-        onOpen={() => navigate(routes.files)}
+        onOpen={() => setIsFileExplorerOpen(true)}
       />
       <BaseFolder
         name={'Contact'}
@@ -68,7 +80,7 @@ function Windows() {
       <BaseFolder
         name={'Terminal'}
         image={'/icons/terminal.png'}
-        onOpen={() => navigate(routes.terminal)}
+        onOpen={() => setIsTerminalOpen(true)}
       />
     </div>
   </div>;

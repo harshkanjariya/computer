@@ -23,6 +23,7 @@ function Terminal() {
   const [isAnimEnded, setIsAnimEnded] = useState(false);
   const stdin = useRef<HTMLInputElement>({} as any);
   const [currentCommandValue, setCurrentCommandValue] = useState('');
+  const terminalBodyRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
     if (writer.current)
@@ -59,6 +60,18 @@ function Terminal() {
       removeKeyCallback(onKeyDown);
     };
   }, [onKeyDown]);
+
+  // Auto-scroll to bottom when new content is added
+  useEffect(() => {
+    if (terminalBodyRef.current) {
+      // Use setTimeout to ensure DOM has updated
+      setTimeout(() => {
+        if (terminalBodyRef.current) {
+          terminalBodyRef.current.scrollTop = terminalBodyRef.current.scrollHeight;
+        }
+      }, 0);
+    }
+  }, [stdout, links, isAnimEnded]);
 
   const Stdin = <input
     ref={stdin}
@@ -140,15 +153,15 @@ function Terminal() {
   }
 
   return <div
-    className={'page-body ' + styles.terminal}
+    className={styles.terminal}
     onClick={() => stdin.current && stdin.current.focus && stdin.current?.focus()}
   >
-    {FirstMessage}
-    <div className={styles.terminalBody}>
+    <div ref={terminalBodyRef} className={styles.terminalBody}>
+      {FirstMessage}
+      {stdout.map((o, i) => <div key={i} dangerouslySetInnerHTML={{__html: o}}/>)}
       {Links || <span className={styles.promptRow}>
         {PathToShow}
       </span>}
-      {stdout.map((o, i) => <div key={i} dangerouslySetInnerHTML={{__html: o}}/>)}
     </div>
   </div>;
 }

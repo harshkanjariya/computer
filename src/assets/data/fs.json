@@ -3,43 +3,23 @@
     "name": "Education",
     "isDir": true,
     "children": {
+      "ssc": {
+        "name": "SSC",
+        "isDir": false,
+        "description": "Secondary School Certificate (SSC)\n\nSchool: Sharda Vidhya Mandir\nLocation: Ahmedabad, Gujarat\nYear: 2015\n\nCompleted my 10th standard with a strong foundation in core subjects. This was the beginning of my academic journey where I developed interest in mathematics and science.",
+        "links": {}
+      },
+      "hsc": {
+        "name": "HSC",
+        "isDir": false,
+        "description": "Higher Secondary Certificate (HSC)\n\nSchool: Sharda Vidhya Mandir\nLocation: Ahmedabad, Gujarat\nYear: 2017\n\nCompleted my 12th standard with focus on Science stream. This period helped me develop analytical thinking and problem-solving skills that would later be crucial in my engineering studies.",
+        "links": {}
+      },
       "b.tech": {
         "name": "B.Tech",
         "isDir": false,
-        "isImage": true,
-        "url": ""
-      }
-    }
-  },
-  "contribution": {
-    "name": "Contribution",
-    "isDir": true,
-    "children": {
-      "msk-markdown": {
-        "name": "Msk Markdown",
-        "isDir": false,
-        "isLink": true,
-        "icons": {
-          "github": "/icons/github.webp",
-          "preview": "/icons/preview.png"
-        },
-        "links": {
-          "github": "https://github.com/harshkanjariya/maze-generator",
-          "preview": "https://harshkanjariya.github.io/maze-generator"
-        }
-      },
-      "bhai-lang": {
-        "name": "Bhai Lang",
-        "isDir": false,
-        "isLink": true,
-        "icons": {
-          "github": "/icons/github.webp",
-          "preview": "/icons/preview.png"
-        },
-        "links": {
-          "github": "https://github.com/harshkanjariya/maze-generator",
-          "preview": "https://harshkanjariya.github.io/maze-generator"
-        }
+        "description": "Bachelor of Technology (B.Tech)\n\nUniversity: Indus University\nLocation: Ahmedabad, Gujarat\nYear: 2021\nDegree: Computer Science & Engineering\n\nCompleted my undergraduate degree in Computer Science & Engineering. During this time, I gained expertise in various programming languages, software development, algorithms, and data structures. This degree laid the foundation for my career in software development.",
+        "links": {}
       }
     }
   },
@@ -51,7 +31,7 @@
         "name": "Maze Generator",
         "isDir": false,
         "isLink": true,
-        "description": "A fun code written that create random maze everytime.",
+        "description": "Generates unique mazes every time.",
         "icons": {
           "github": "/icons/github.webp",
           "preview": "/icons/preview.png"
@@ -61,32 +41,124 @@
           "preview": "https://harshkanjariya.github.io/maze-generator"
         }
       },
-      "shared-editor": {
-        "name": "Shared Online Editor",
+      "mock-n-serve": {
+        "name": "Mock-n-Serve",
         "isDir": false,
         "isLink": true,
-        "description": "An online editor which is synced between two users. Now sharing becomes buttery smooth.",
-        "icons": {
-          "github": "/icons/github.webp",
-          "preview": "/icons/preview.png"
-        },
-        "links": {
-          "github": "https://github.com/harshkanjariya/live-share",
-          "preview": "https://shared-edit.web.app"
-        }
-      },
-      "mock-server": {
-        "name": "Mock Server",
-        "isDir": false,
-        "isLink": true,
-        "description": "Mock n serve is a mock server where you can do the api call verifications by api clients.",
+        "description": "A mock server for testing CORS integrations.",
         "icons": {
           "github": "/icons/github.webp",
           "preview": "/icons/preview.png"
         },
         "links": {
           "github": "https://github.com/harshkanjariya/mock-n-serve",
-          "preview": "https://mock-n-serve.onrender.com"
+          "preview": "https://mock-n-serve.onrender.com/"
+        }
+      },
+      "msk-markdown": {
+        "name": "MSK Markdown Editor",
+        "isDir": false,
+        "isLink": true,
+        "description": "A user-friendly online markdown editor.",
+        "icons": {
+          "github": "/icons/github.webp",
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "github": "https://github.com/msk-apps/msk-markdown",
+          "preview": "https://msk-markdown.netlify.app"
+        }
+      },
+      "bhai-lang": {
+        "name": "BhaiLang",
+        "isDir": false,
+        "isLink": true,
+        "description": "A toy programming language for fun learning.",
+        "icons": {
+          "github": "/icons/github.webp",
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "github": "https://github.com/DulLabs/bhai-lang",
+          "preview": "https://bhailang.js.org/"
+        }
+      },
+      "fire-fighter-login": {
+        "name": "Firefighter Login",
+        "isDir": false,
+        "isLink": true,
+        "description": "A unique animated login page for firefighters.",
+        "icons": {
+          "github": "/icons/github.webp",
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "github": "https://github.com/harshkanjariya/fire-fighter-login",
+          "preview": "https://harshkanjariya.github.io/fire-fighter-login/"
+        }
+      },
+      "photography": {
+        "name": "Photography Website",
+        "isDir": false,
+        "isLink": true,
+        "description": "A website for photographers and photo studios.",
+        "icons": {
+          "github": "/icons/github.webp",
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "github": "https://github.com/harshkanjariya/photography",
+          "preview": "https://harshkanjariya.github.io/photography"
+        }
+      },
+      "browser-computer": {
+        "name": "Browser Computer",
+        "isDir": false,
+        "isLink": true,
+        "description": "In browser computer with basic functionalities.",
+        "icons": {
+          "github": "/icons/github.webp",
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "github": "https://github.com/harshkanjariya/computer",
+          "preview": "https://harshkanjariya.github.io/computer"
+        }
+      },
+      "way2advertize": {
+        "name": "Way2 Advertize",
+        "isDir": false,
+        "isLink": true,
+        "description": "My first freelancing project - Website for Amazon Authorized Training Partner company.\n\nYear: 2020 (COVID-19 Lockdown)\nClient: Way2Advertize - Amazon ATES Certification Program\nStatus: Still Live\n\nDeveloped a complete website for Way2Advertize, an Amazon authorized training partner company that provides e-commerce training, insurance services, and business consulting. This was my first professional freelancing project completed during the 2020 lockdown period.\n\nTechnologies: Web Development, Freelancing",
+        "icons": {
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "preview": "https://www.way2advertize.com/"
+        }
+      },
+      "robofest-2020": {
+        "name": "Robofest 2020",
+        "isDir": false,
+        "isLink": true,
+        "description": "IoT Robotics Project - Multi-Purpose Defence Rover\n\nYear: 2020\nCompetition: Robofest 2020 (GUJCOST & DST)\nPrize Won: ₹2,50,000 (Stage 2 Winner)\nUniversity: Indus University\nStatus: Robot displayed at Science City Robotic Gallery\n\nWorked as part of a 4-member team to develop a Multi-Purpose Defence Rover for the Robofest 2020 competition. Built a complete IoT system with Raspberry Pi, Python backend integrated with Firebase for real-time data handling, and developed a Java Android mobile application to remotely control and monitor the robot.\n\nTechnologies: Raspberry Pi, Python, Firebase, Java, Android Development, IoT, Robotics, Hardware-Software Integration",
+        "icons": {
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "preview": "https://indusuni.ac.in/robofest-2020/"
+        }
+      },
+      "msherpa": {
+        "name": "MSherpa",
+        "isDir": false,
+        "isLink": true,
+        "description": "Personalized All-in-One Finance Agent\n\nYear: 2025 (After Abnormal Security)\nType: Freelancing Project\nStatus: Live in Dev (US Country)\n\nDeveloped a comprehensive personalized finance agent application as a freelancing project after leaving Abnormal Security. MSherpa is an all-in-one financial management solution designed to help users manage their finances efficiently. The platform is currently live and operational for the US market.\n\nTechnologies: Web Development, Finance Technology, Full-stack Development",
+        "icons": {
+          "preview": "/icons/preview.png"
+        },
+        "links": {
+          "preview": "https://msherpa-dev.web.app/"
         }
       }
     }
@@ -94,6 +166,49 @@
   "experience": {
     "name": "Experience",
     "isDir": true,
-    "children": {}
+    "children": {
+      "emplitrack": {
+        "name": "Emplitrack",
+        "isDir": false,
+        "isLink": true,
+        "description": "Co-founder & Lead Engineer\n\nLocation: Ahmedabad, Gujarat\nWebsite: emplitrack.com\n\nMy own startup - A sales employees tracking based attendance system. As co-founder and lead engineer, I was responsible for building the core platform and managing technical operations. Additionally, I performed many other roles as part of the owner team, including product strategy, business development, and team management.\n\nTechnologies: Full-stack development, System architecture, Team leadership",
+        "icons": {
+          "website": "/icons/preview.png"
+        },
+        "links": {
+          "website": "https://emplitrack.com"
+        }
+      },
+      "boosters-edutech": {
+        "name": "Boosters Edutech",
+        "isDir": false,
+        "description": "Blockchain Developer\n\nLocation: Noida\nDuration: September 2023 - November 2023\n\nWorked on Web3.0 technologies including Ethereum and blockchain development. Created an IDO (Initial DEX Offering) launchpad platform. Gained extensive experience in smart contract development, DeFi protocols, and blockchain architecture.\n\nTechnologies: Ethereum, Blockchain, Smart Contracts, Web3.0, IDO Launchpad",
+        "links": {}
+      },
+      "physicswallah": {
+        "name": "Physics Wallah",
+        "isDir": false,
+        "description": "Full Stack Developer & Mobile Developer\n\nLocation: Noida\nDuration: November 2023 - May 2025\n\nJoined PhysicsWallah after they acquired Boosters Edutech. Initially worked on the frontend and backend of PW's website using ReactJS and NestJS, building scalable features and improving user experience.\n\nLater transitioned to mobile development, working on PhysicsWallah's Android app using Kotlin and Jetpack Compose, creating smooth and modern UI/UX for students.\n\nTechnologies: ReactJS, NestJS, Kotlin, Jetpack Compose, Full-stack Development",
+        "links": {}
+      },
+      "abnormal-security": {
+        "name": "Abnormal Security",
+        "isDir": false,
+        "description": "Software Engineer\n\nLocation: Bangalore\nDuration: May 2025 - August 2025 (3 months)\n\nWorked at Abnormal Security, a leading cybersecurity company. Contributed to building security solutions and improving platform capabilities.\n\nTechnologies: Security Solutions, Software Development",
+        "links": {}
+      },
+      "comfort-stays-pg": {
+        "name": "Comfort Stays PG",
+        "isDir": false,
+        "isLink": true,
+        "description": "Founder & Owner\n\nLocation: Ahmedabad, Gujarat\nWebsite: comfort-stays-pg.in\nStarted: August 2025\n\nAfter leaving Abnormal Security, I started my own PG (Paying Guest) business. Built and manage a modern PG facility with a complete website for bookings and information. Responsible for all aspects of the business including operations, marketing, and technology.\n\nTechnologies: Business Management, Web Development, Hospitality",
+        "icons": {
+          "website": "/icons/preview.png"
+        },
+        "links": {
+          "website": "https://comfort-stays-pg.in"
+        }
+      }
+    }
   }
 }

@@ -46,7 +46,7 @@ function FileExplorer() {
   const currentFolder: { [key: string]: FolderStructure } = getCurrentFolder(fs, path).children || {};
 
   return (
-    <div className={'full-page ' + styles.fileExplorer}>
+    <div className={styles.fileExplorer}>
       <div className={styles.header}>
         {!path.length ? null : <ChevronLeft onClick={() => navigateBack()}/>}
         <PathView
@@ -55,10 +55,6 @@ function FileExplorer() {
           className={styles.pathContainer}
         />
       </div>
-      <Close
-        style={{position: 'absolute', right: 20, top: 20}}
-        onClick={() => window.history.back()}
-      />
       <div className={styles.folderList}>
         {Object.keys(currentFolder).map((key) => {
           const data = currentFolder[key];

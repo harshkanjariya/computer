@@ -1,11 +1,8 @@
 import {useEffect} from 'react';
 import Header from '../../components/Header/Header';
 import Typing from '../../components/Welcome/Typing/Typing';
-import EnvironmentSelection from '../../components/Welcome/EnvironmentSelection/EnvironmentSelection';
 import {useLocation, useNavigate} from 'react-router-dom';
 import {routes} from '../../core/router';
-import {environments} from '../../utils/constants';
-import {getCurrentEnvironment} from '../../utils/ui';
 
 const messageList = [
   'Hello!',
@@ -17,46 +14,28 @@ const messageList = [
 function Welcome() {
   const navigate = useNavigate();
   const location = useLocation();
-  const env = getCurrentEnvironment();
 
   useEffect(() => {
     if (!location.hash.length) {
-      if (env == environments.windows) {
-        navigate(routes.windows);
-      } else if (env === environments.terminal) {
-        navigate(routes.terminal);
-      }
+      // Always navigate to Windows by default
+      navigate(routes.windows);
     }
   }, []);
 
   let CenterComponent;
   if (location.hash === '') {
-    CenterComponent = <EnvironmentSelection onSelect={(selectedEnv) => {
-      if (selectedEnv == environments.windows) {
-        navigate('/#typing', {
-          state: {
-            navigate: routes.windows,
-            messageList: ['Here\'s my life,\n if it was windows.'],
-          }
-        });
-      } else {
-        navigate('/#typing', {
-          state: {
-            navigate: routes.terminal,
-            messageList: ['Here\'s my life,\n if it was terminal.'],
-          }
-        });
-      }
-    }}/>;
+    // Navigate directly to Windows
+    navigate(routes.windows);
+    return null;
   } else if (location.hash == '#typing') {
     CenterComponent = <Typing
-      messageList={location.state.messageList || []}
-      onEnd={() => navigate(location.state.navigate)}
+      messageList={location.state?.messageList || ['Here\'s my life,\n if it was windows.']}
+      onEnd={() => navigate(location.state?.navigate || routes.windows)}
     />;
   } else if (location.hash == '#welcome') {
     CenterComponent = <Typing
       messageList={messageList}
-      onEnd={() => navigate('/#environments')}
+      onEnd={() => navigate(routes.windows)}
     />;
   }
 

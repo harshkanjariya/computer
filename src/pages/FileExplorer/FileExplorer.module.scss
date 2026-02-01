@@ -1,7 +1,33 @@
 .fileExplorer {
-  padding: 20px 40px;
-  height: calc(100vh - var(--header-height) - 40px);
-  width: calc(100vw - 80px);
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: var(--background-color);
+  color: var(--font-color);
+
+  // Ensure all text is visible and clear (no shadows)
+  :global(.folder-name) {
+    color: var(--font-color) !important;
+    text-shadow: none !important;
+  }
+
+  div, span, p {
+    color: var(--font-color);
+    text-shadow: none;
+  }
+
+  // Path view text
+  :global(.pathView) {
+    color: var(--font-color);
+    text-shadow: none;
+    
+    span {
+      color: var(--font-color);
+      text-shadow: none;
+    }
+  }
 }
 
 .folderList {

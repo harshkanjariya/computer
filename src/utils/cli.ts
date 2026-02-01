@@ -254,17 +254,22 @@ export function useCli() {
 
   function execute(command: string) {
     setCommandHistory([command, ...commandHistory]);
-    const newOut = [
-      getCurrentPrompt() + ' ' + command,
-      ...stdout,
-    ];
+    const commandLine = getCurrentPrompt() + ' ' + command;
     const result = runCommand(command);
-    if (result) {
-      if (typeof result === 'string') {
-        newOut.unshift(result);
-      }
-      setStdout(newOut);
+    
+    // Special handling for clear command
+    if (command.trim() === 'clear') {
+      setStdout([]);
+      return;
     }
+    
+    // Append in chronological order: command line first, then result
+    const newStdout = [...stdout, commandLine];
+    if (result && typeof result === 'string') {
+      newStdout.push(result);
+    }
+    
+    setStdout(newStdout);
   }
 
   return {

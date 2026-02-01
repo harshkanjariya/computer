@@ -1,5 +1,14 @@
+.description {
+  white-space: pre-line;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--font-color);
+}
+
 .linkList {
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
